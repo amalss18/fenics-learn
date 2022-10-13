@@ -155,6 +155,7 @@ with io.XDMFFile(msh.comm, "out_poisson/poisson.xdmf", "w") as file:
 # +
 try:
     import pyvista
+    import matplotlib.pyplot as plt
     cells, types, x = plot.create_vtk_mesh(V)
     grid = pyvista.UnstructuredGrid(cells, types, x)
     grid.point_data["u"] = uh.x.array.real
