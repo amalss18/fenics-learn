@@ -1,0 +1,4 @@
+fenics-dolfinx
+mpich
+pyvista
+pytest
